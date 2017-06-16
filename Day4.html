@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <link rel="stylesheet" test = "text/css" href="Day4.css">
+    <meta charset="utf-8">
+
+    <title>~Day 4: Practice and Practice</title>
+
+  </head>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbfSBInJ4BG9Q9iqeQKuBX5sKsYt-qMsU"></script>
+  <style>
+    #mapcanvas {
+      height: 500px;
+      background-color: #aaaaaa;
+
+    }
+  </style>
+    </head>
+  <body>
+    <h1>~Day 4: Practice and Practice</h1>
+    <p><i>Making Web Pages:</i>
+        We finished our test with Google maps, as you can see underneath this
+        post. I was also working on the previous pages and adding more
+        content and anchors for the other pages. The blog is looking excellent so
+        far.
+    <h2>Using Google Maps</h2>
+    <div id="mapcanvas"></div>
+    <script>
+
+     var map;
+     var geocoder = new google.maps.Geocoder();
+     var address = "12067 East Gold Dust, Scottsdale, AZ 85259";
+     var geocodeOptions = {
+       address: address
+     }
+
+     geocoder.geocode( geocodeOptions, addressCallback);
+
+    function addressCallback( results, status ) {
+      if (status == google.maps.GeocoderStatus.OK ) {
+        var location = results[0].geometry.location;
+
+        var mapDiv = document.getElementById("mapcanvas");
+        var mapOptions = {
+          zoom: 15,
+          center: location,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map (mapDiv, mapOptions);
+      }
+    }
+    </script>
+
+
+
+
+    <p><i>Coding for Games 1:</i>
+        Today, we created many other features for my game. We added sound effects
+        (victory, coin, and bounce) to further the gaming experience. I also
+        added a timer for completion, until the game resets the board again.
+        In addition, I created my first build and tested it on the Mac.
+    </p>
+
+    <p><i>Musical Robots 1:</i>
+          Finally, almost completed the instrument. Since the fretboard was a bit
+          too wide, we had to sand off a few inches. My hand hurt so much from
+          sanding everything. From the neck and the fretboard to the headstock
+          and bottom, I used 2 sanding blocks. Right after, I connected the
+          bottom and tops of the body. I hope we can finish everything on time
+          tomorrow. :)
+    </p>
+    <img src="instrument.jpg" alt="" height="500px" width="1000px">
+
+
+  </body>
+
+
+  <p><a href="Day5.html">Next Day</a></p>
+  <p><a href="index.html">Back to My Homepage</a></p>
+  <p><a href="Day3.html">Previous Day</a></p>
+
+</html>

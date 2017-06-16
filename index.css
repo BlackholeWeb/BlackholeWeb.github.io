@@ -1,0 +1,54 @@
+h1 {
+  color: #9C27B0;
+  font-family: Arial Black;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+}
+
+
+.HomePage {
+  margin: 20px;
+  /*box-shadow: 3px 3px 5px 6px #ccc;*/
+
+}
+
+h2 {
+  color: white;
+}
+
+.Image {
+  display: block;
+    margin: Auto;
+    width: 40%;
+}
+
+
+body {
+    background-image: url("BG.png");
+}
+
+input.MyButton {
+width: 300px;
+padding: 20px;
+cursor: pointer;
+font-weight: bold;
+font-size: 150%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+-moz-box-shadow:: 6px 6px 5px #999;
+-webkit-box-shadow:: 6px 6px 5px #999;
+box-shadow:: 6px 6px 5px #999;
+}
+input.MyButton:hover {
+color: yellow;
+background: #11C22B;
+border: 1px solid #fff;
+-moz-box-shadow:: 5px 5px 4px #adadad;
+-webkit-box-shadow:: 5px 5px 4px #adadad;
+box-shadow:: 5px 5px 4px #adadad;
+transform:scale(1.1);
+transition: 0.5s ease-in-out;
+}
